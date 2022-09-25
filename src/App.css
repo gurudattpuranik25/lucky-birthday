@@ -112,6 +112,7 @@ body {
   }
   .container {
     width: 20rem;
+    transition: all 0.2s ease-in-out;
   }
   .footer {
     display: none;
