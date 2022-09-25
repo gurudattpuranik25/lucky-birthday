@@ -4,6 +4,10 @@ body {
 
 .main {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main::before {
@@ -36,6 +40,62 @@ body {
     #fc7351,
     #fb5f5f
   );
+  width: 24rem;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.input__style {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.input__block {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border: 2px solid white;
+  padding: 0.2rem 0.8rem;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  border: 2px solid gray;
+  color: white;
+}
+
+.result {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.social__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  padding-top: 1rem;
 }
 
 .footer {
