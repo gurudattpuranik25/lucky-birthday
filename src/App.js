@@ -7,7 +7,8 @@ function App() {
   const [result, setResult] = useState("");
 
   const checkMyLuck = (dob, luckyNumber) => {
-    if (dob === "" || luckyNumber === "") alert("Please enter all the fields.");
+    if (dob === "" || luckyNumber === "" || luckyNumber < 0)
+      setResult("Please enter correct values in the fields.");
     else {
       const formattedDate = dob.replaceAll("-", "");
       let sum = 0;
