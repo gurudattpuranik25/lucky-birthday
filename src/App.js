@@ -7,7 +7,12 @@ function App() {
   const [result, setResult] = useState("");
 
   const checkMyLuck = (dob, luckyNumber) => {
-    if (dob === "" || luckyNumber === "" || luckyNumber < 0)
+    if (
+      dob === "" ||
+      luckyNumber === "" ||
+      luckyNumber < 0 ||
+      luckyNumber === "0"
+    )
       setResult("Please enter correct values in the fields.");
     else {
       const formattedDate = dob.replaceAll("-", "");
